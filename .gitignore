@@ -1,0 +1,4 @@
+tools/config.local.json
+__pycache__/
+.DS_Store
+.preview/
