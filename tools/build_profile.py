@@ -31,9 +31,11 @@ PANEL = "#161b22"
 BORDER = "#30363d"
 TEXT = "#e6edf3"
 DIM = "#8b949e"
-GREEN = "#3fb950"
+# ATOLLS colors (taken from the logo): lapis #0054B4 -> sky #009CF0 -> teal #18CCC0
+TEAL = "#18CCC0"
+SKY = "#009CF0"
 BLUE = "#58a6ff"
-LEVELS = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+LEVELS = ["#161b22", "#0b3d80", "#0054b4", "#009cf0", "#18ccc0"]
 MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace"
 WIDTH = 840
 
@@ -154,7 +156,7 @@ def window(width: int, height: int, title: str, body: str) -> str:
 
 def prompt(x: float, y: float, handle: str, cmd: str, size: int = 15) -> str:
     return (f'<text x="{x}" y="{y}" font-family="{MONO}" font-size="{size}" font-weight="600" xml:space="preserve">'
-            f'<tspan fill="{GREEN}">{esc(handle)}@github</tspan><tspan fill="{DIM}"> ~ $ </tspan>'
+            f'<tspan fill="{TEAL}">{esc(handle)}@github</tspan><tspan fill="{DIM}"> ~ $ </tspan>'
             f'<tspan fill="{TEXT}">{esc(cmd)}</tspan></text>')
 
 
@@ -292,7 +294,7 @@ def whoami_svg(st: dict, cfg: dict) -> str:
         y = ty + (i // 2) * (th + tg)
         parts.append(f'<rect x="{x}" y="{y}" width="{tw}" height="{th}" rx="6" fill="{PANEL}" stroke="{BORDER}"/>')
         parts.append(f'<text x="{x+12}" y="{y+18}" font-family="{MONO}" font-size="11" fill="{DIM}">$ {esc(label)}</text>')
-        parts.append(f'<text x="{x+12}" y="{y+42}" font-family="{MONO}" font-size="22" font-weight="700" fill="{GREEN}">{esc(val)}'
+        parts.append(f'<text x="{x+12}" y="{y+42}" font-family="{MONO}" font-size="22" font-weight="700" fill="{SKY}">{esc(val)}'
                      f'<tspan font-size="11" font-weight="400" fill="{DIM}"> {esc(unit)}</tspan></text>')
         parts.append(f'<text x="{x+12}" y="{y+57}" font-family="{MONO}" font-size="10" fill="{DIM}">{esc(sub)}</text>')
 
@@ -310,7 +312,7 @@ def whoami_svg(st: dict, cfg: dict) -> str:
     for i, (v, (yy, mm)) in enumerate(zip(st["monthly"], st["months"])):
         hgt = (base - top) * v / mx
         x = area_x + i * area_w / n + (area_w / n - bw) / 2
-        parts.append(f'<rect x="{x:.1f}" y="{base-hgt:.1f}" width="{bw:.1f}" height="{max(hgt,1):.1f}" rx="2" fill="{GREEN if i == peak else "#26a641"}"><title>{yy}-{mm:02d}: {v}</title></rect>')
+        parts.append(f'<rect x="{x:.1f}" y="{base-hgt:.1f}" width="{bw:.1f}" height="{max(hgt,1):.1f}" rx="2" fill="{TEAL if i == peak else SKY}"><title>{yy}-{mm:02d}: {v}</title></rect>')
         if i == peak:
             parts.append(f'<text x="{x + bw/2:.1f}" y="{base-hgt-5:.1f}" text-anchor="middle" font-family="{MONO}" font-size="10" fill="{TEXT}">{v}</text>')
         parts.append(f'<text x="{x + bw/2:.1f}" y="{base+14}" text-anchor="middle" font-family="{MONO}" font-size="9" fill="{DIM}">{dt.date(yy, mm, 1).strftime("%b")[0]}</text>')
