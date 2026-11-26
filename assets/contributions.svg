@@ -19,7 +19,6 @@
 <text x="33.5" y="135" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#8b949e">Mon</text>
 <text x="33.5" y="163" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#8b949e">Wed</text>
 <text x="33.5" y="191" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#8b949e">Fri</text>
-<rect x="67.5" y="168" width="11" height="11" rx="2" fill="#161b22"><title>2025-11-27: 0 commits</title></rect>
 <rect x="67.5" y="182" width="11" height="11" rx="2" fill="#161b22"><title>2025-11-28: 0 commits</title></rect>
 <rect x="67.5" y="196" width="11" height="11" rx="2" fill="#161b22"><title>2025-11-29: 0 commits</title></rect>
 <rect x="81.5" y="112" width="11" height="11" rx="2" fill="#161b22"><title>2025-11-30: 0 commits</title></rect>
@@ -383,8 +382,9 @@
 <rect x="795.5" y="126" width="11" height="11" rx="2" fill="#161b22"><title>2026-11-23: 0 commits</title></rect>
 <rect x="795.5" y="140" width="11" height="11" rx="2" fill="#0b3d80"><title>2026-11-24: 1 commits</title></rect>
 <rect x="795.5" y="154" width="11" height="11" rx="2" fill="#161b22"><title>2026-11-25: 0 commits</title></rect>
-<rect x="795.5" y="168" width="11" height="11" rx="2" fill="#18ccc0"><title>2026-11-26: 12 commits</title></rect>
-<text x="33.5" y="232" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#e6edf3" font-weight="600">2,272 commits in the last year<tspan fill="#8b949e" font-weight="400">  (all repos, incl. private)</tspan></text>
+<rect x="795.5" y="168" width="11" height="11" rx="2" fill="#18ccc0"><title>2026-11-26: 15 commits</title></rect>
+<rect x="795.5" y="182" width="11" height="11" rx="2" fill="#161b22"><title>2026-11-27: 0 commits</title></rect>
+<text x="33.5" y="232" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#e6edf3" font-weight="600">2,275 commits in the last year<tspan fill="#8b949e" font-weight="400">  (all repos, incl. private)</tspan></text>
 <text x="666.5" y="232" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#8b949e">Less</text>
 <rect x="700.5" y="222" width="11" height="11" rx="2" fill="#161b22"/>
 <rect x="714.5" y="222" width="11" height="11" rx="2" fill="#0b3d80"/>
